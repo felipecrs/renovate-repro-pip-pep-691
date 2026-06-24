@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended"
+    ],
+    "packageRules": [
+        {
+            // Force use of pypi simple
+            "matchDatasources": ["pypi"],
+            "matchPackageNames": ["pytest"],
+            "registryUrls": ["https://pypi.org/simple/"]
+        },
+        {
+            "matchDatasources": ["pypi"],
+            "matchPackageNames": ["aiodocker"],
+            // Force use of pypi JSON API
+            "registryUrls": ["https://pypi.org/pypi/"]
+        }
+    ],
+    // This doesn't work with old pypi simple implementation
+    "minimumReleaseAge": "1 day"
+}
