@@ -6,15 +6,7 @@
     "packageRules": [
         {
             // Force use of pypi simple
-            "matchDatasources": ["pypi"],
-            "matchPackageNames": ["pytest"],
-            "registryUrls": ["https://pypi.org/simple/"]
-        },
-        {
-            "matchDatasources": ["pypi"],
-            "matchPackageNames": ["aiodocker"],
-            // Force use of pypi JSON API
-            "registryUrls": ["https://pypi.org/pypi/"]
+            "matchDatasources": ["pypi"],            "registryUrls": ["https://pypi.org/simple/"]
         }
     ],
     // This doesn't work with old pypi simple implementation
