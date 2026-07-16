@@ -11,5 +11,5 @@
         }
     ],
     // This doesn't work with old pypi simple implementation
-    "minimumReleaseAge": "90 days"
+    "minimumReleaseAge": "45 days"
 }
