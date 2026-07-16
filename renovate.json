@@ -5,10 +5,11 @@
     ],
     "packageRules": [
         {
-            // Force use of pypi simple
-            "matchDatasources": ["pypi"],            "registryUrls": ["https://pypi.org/simple/"]
+            // Force use of pypi simple (see note at https://github.com/renovatebot/renovate/pull/44222)
+            "matchDatasources": ["pypi"],
+            "registryUrls": ["https://pypi.org/simple/"]
         }
     ],
     // This doesn't work with old pypi simple implementation
-    "minimumReleaseAge": "1 day"
+    "minimumReleaseAge": "90 days"
 }
