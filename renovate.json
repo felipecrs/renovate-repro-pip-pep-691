@@ -11,5 +11,6 @@
         }
     ],
     // This doesn't work with old pypi simple implementation
-    "minimumReleaseAge": "45 days"
+    "minimumReleaseAge": "45 days",
+    "minimumReleaseAgeBehaviour": "timestamp-required"
 }
